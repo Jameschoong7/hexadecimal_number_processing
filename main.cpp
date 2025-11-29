@@ -6,7 +6,7 @@
 using namespace std;
 
 int main(){
-
+    srand(static_cast<unsigned>(time(0)));
     int numCertificates, numWords;
 
     cout << "Enter the number of certificates: ";

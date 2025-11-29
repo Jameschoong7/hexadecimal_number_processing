@@ -44,7 +44,7 @@ class DocumentHandler{
 
             //compare every doc
             for(size_t i =0; i<documents.size();i++){
-                for(size_t j=0;j<documents.size();j++){
+                for(size_t j= i+1;j<documents.size();j++){
 
                     //call similarity function
                     int sim = documents[i].similarity(documents[j]);
@@ -53,9 +53,9 @@ class DocumentHandler{
                     }
                         
                 }
-                cout<<"Minimum Similarity: "<<minSim<<endl;
+                
             }
-
+            cout<<"Minimum Similarity: "<<minSim<<endl;
         }
 
         //digit statistics
