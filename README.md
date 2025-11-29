@@ -17,6 +17,20 @@ The project consists of the following files
         b. Digit Frequency (Least and Most frequent hexadecimal digits).
 
 
+
+DOCUMENT DESIGN NOTES
+---------------------
+The DocumentHandler class is designed to handle any document type provided the class implement the following implicit function:
+1. getContent()
+    - return a container like  vector<string>
+    - required for digitStatistic() to process character frequencies
+
+2. similarity(const T& other)
+    - take a constant reference to another object of the same type.
+    - return an integer representing the similarity score.
+    - required for 'minSimilarity()' to compare documents.
+
+
 COMPILATION INSTRUCTIONS
 ------------------------
 This program is written in C++ and can be compiled using the g++ compiler.
